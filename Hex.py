@@ -3,12 +3,10 @@ Hex Reinforcement Learning Environment
 """
 
 import pygame
-import random
 import math
-import numpy as np
-import copy
-import torch
 import time
+import torch
+import copy
 
 pi = 3.1415926535
 red = (240, 0, 0)
@@ -86,7 +84,7 @@ class Hex:
             self.connect(index)
 
             if self.win_state is not None:
-                reward = 20
+                reward = 200
                 done = True
 
             else:
@@ -237,5 +235,3 @@ def play_hex():
 
         game.render()
 
-print("Hello World")
-play_hex()
